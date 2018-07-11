@@ -3,24 +3,7 @@
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<ScalingMode>Compact</ScalingMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Button name="ПроверкиВыделитьВсе" id="64">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ВыделитьВсе</CommandName>
-				<ExtendedTooltip name="ПроверкиВыделитьВсеРасширеннаяПодсказка" id="65"/>
-			</Button>
-			<Button name="ПроверкиСнятьВыделение" id="66">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СнятьВыделение</CommandName>
-				<ExtendedTooltip name="ПроверкиСнятьВыделениеРасширеннаяПодсказка" id="67"/>
-			</Button>
-			<Button name="ВыполнитьПроверку" id="53">
-				<Type>CommandBarButton</Type>
-				<DefaultButton>true</DefaultButton>
-				<CommandName>Form.Command.ВыполнитьПроверку</CommandName>
-				<ExtendedTooltip name="ВыполнитьПроверкуРасширеннаяПодсказка" id="54"/>
-			</Button>
-		</ChildItems>
+		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
@@ -71,6 +54,24 @@
 							<ContextMenu name="ПроверкиКонтекстноеМеню" id="10"/>
 							<AutoCommandBar name="ПроверкиКоманднаяПанель" id="11">
 								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ПроверкиВыделитьВсе" id="64">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыделитьВсе</CommandName>
+										<ExtendedTooltip name="ПроверкиВыделитьВсеРасширеннаяПодсказка" id="65"/>
+									</Button>
+									<Button name="ПроверкиСнятьВыделение" id="66">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СнятьВыделение</CommandName>
+										<ExtendedTooltip name="ПроверкиСнятьВыделениеРасширеннаяПодсказка" id="67"/>
+									</Button>
+									<Button name="ВыполнитьПроверку" id="53">
+										<Type>CommandBarButton</Type>
+										<DefaultButton>true</DefaultButton>
+										<CommandName>Form.Command.ВыполнитьПроверку</CommandName>
+										<ExtendedTooltip name="ВыполнитьПроверкуРасширеннаяПодсказка" id="54"/>
+									</Button>
+								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ПроверкиРасширеннаяПодсказка" id="12"/>
 							<SearchStringAddition name="ПроверкиСтрокаПоиска" id="13">
