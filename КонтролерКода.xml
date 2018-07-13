@@ -1,53 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	<ExternalDataProcessor uuid="5307a5b4-853c-4d95-8671-4ef8bcd35536">
-=======
-<ExternalDataProcessor uuid="e43cc0c5-1cad-4b2d-8c99-0762fd51dd43">
->>>>>>> 4a389f3d6923b5afbe22cde3bdcf7f12d16495b8
+	<ExternalDataProcessor uuid="3cc0fbfd-3bd4-4064-a96d-c724adb053a6">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>9ff5dc6a-e0ee-4b65-9c6b-1af83e2a54c0</xr:ObjectId>
+				<xr:ObjectId>b4903798-269e-4d68-a81f-6a087c6d2bdc</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.КонтролерКода" category="Object">
-<<<<<<< HEAD
-				<xr:TypeId>3d12b2fb-a89e-42e2-95db-78c1385c3afc</xr:TypeId>
-				<xr:ValueId>4115abd4-94ba-43d3-99cd-ce1bb20c01f2</xr:ValueId>
-=======
-	<ExternalDataProcessor uuid="e43cc0c5-1cad-4b2d-8c99-0762fd51dd43">
-=======
-	<ExternalDataProcessor uuid="0ffc457d-0a17-4895-8fa2-9937fc4fb32b">
->>>>>>> master
-=======
-	<ExternalDataProcessor uuid="3226106b-e020-45a2-95be-75fd5899fc4b">
->>>>>>> master
-		<InternalInfo>
-			<xr:ContainedObject>
-				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>25e2d10a-dfb5-4e90-9f7a-8009074018bc</xr:ObjectId>
-			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.КонтролерКода" category="Object">
-<<<<<<< HEAD
-<<<<<<< HEAD
-				<xr:TypeId>63daab87-0606-477d-96c1-3247b832adbf</xr:TypeId>
-				<xr:ValueId>a4333391-6f8a-42f1-9514-0ce83efa79e5</xr:ValueId>
->>>>>>> master
-=======
-				<xr:TypeId>63daab87-0606-477d-96c1-3247b832adbf</xr:TypeId>
-				<xr:ValueId>a4333391-6f8a-42f1-9514-0ce83efa79e5</xr:ValueId>
->>>>>>> 4a389f3d6923b5afbe22cde3bdcf7f12d16495b8
-=======
-				<xr:TypeId>393ed9a7-6f07-4b55-98f0-04edb39382aa</xr:TypeId>
-				<xr:ValueId>eb30d3ae-bd51-49c3-9910-a069e44cec3e</xr:ValueId>
->>>>>>> master
-=======
-				<xr:TypeId>ab22e86e-bac1-4acd-ac41-c814dbd5588d</xr:TypeId>
-				<xr:ValueId>2c456759-0543-454b-bd4e-6f9b6b598bcf</xr:ValueId>
->>>>>>> master
+				<xr:TypeId>c0403846-75df-4cc6-bb35-66a1d90a6b26</xr:TypeId>
+				<xr:ValueId>c44636ec-de5f-4741-9fb1-73093ff49cef</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
