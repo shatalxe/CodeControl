@@ -77,6 +77,11 @@
 										<CommandName>Form.Command.ВыполнитьПроверку</CommandName>
 										<ExtendedTooltip name="ВыполнитьПроверкуРасширеннаяПодсказка" id="54"/>
 									</Button>
+									<Button name="ФормаТест_GitHub" id="133">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Тест_GitHub</CommandName>
+										<ExtendedTooltip name="ФормаТест_GitHubРасширеннаяПодсказка" id="134"/>
+									</Button>
 								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ПроверкиРасширеннаяПодсказка" id="12"/>
@@ -806,6 +811,21 @@
 			<Action>ОткрытьФайл</Action>
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Тест_GitHub" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест git hub</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест git hub</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест_GitHub</Action>
 		</Command>
 	</Commands>
 </Form>
