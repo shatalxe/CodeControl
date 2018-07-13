@@ -82,6 +82,11 @@
 										<CommandName>Form.Command.Тест_GitHub</CommandName>
 										<ExtendedTooltip name="ФормаТест_GitHubРасширеннаяПодсказка" id="134"/>
 									</Button>
+									<Button name="Команда1" id="135">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Команда1</CommandName>
+										<ExtendedTooltip name="Команда1РасширеннаяПодсказка" id="136"/>
+									</Button>
 								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ПроверкиРасширеннаяПодсказка" id="12"/>
@@ -826,6 +831,9 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Тест_GitHub</Action>
+		</Command>
+		<Command name="Команда1" id="6">
+			<Action>Команда1</Action>
 		</Command>
 	</Commands>
 </Form>
