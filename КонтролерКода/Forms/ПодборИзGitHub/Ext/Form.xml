@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПеренести" id="10">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.Перенести</CommandName>
+				<ExtendedTooltip name="ФормаПеренестиРасширеннаяПодсказка" id="11"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnSaveDataInSettingsAtServer">ПриСохраненииДанныхВНастройкахНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВверх" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вверх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВверхРасширеннаяПодсказка" id="87"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВверхЛево" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор коммита</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вверх лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаВверхЛевоРасширеннаяПодсказка" id="89"/>
+					<ChildItems>
+						<InputField name="Owner" id="1">
+							<DataPath>Owner</DataPath>
+							<ContextMenu name="OwnerКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="OwnerРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">OwnerПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Repo" id="4">
+							<DataPath>Repo</DataPath>
+							<ContextMenu name="RepoКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="RepoРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">RepoПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="author" id="58">
+							<DataPath>author</DataPath>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="authorКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="authorРасширеннаяПодсказка" id="60"/>
+							<Events>
+								<Event name="OnChange">authorПриИзменении</Event>
+								<Event name="StartChoice">authorНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<Table name="Сommits" id="61">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Сommits</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СommitsКонтекстноеМеню" id="62"/>
+							<AutoCommandBar name="СommitsКоманднаяПанель" id="63">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СommitsРасширеннаяПодсказка" id="64"/>
+							<SearchStringAddition name="СommitsСтрокаПоиска" id="65">
+								<AdditionSource>
+									<Item>Сommits</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СommitsСтрокаПоискаКонтекстноеМеню" id="66"/>
+								<ExtendedTooltip name="СommitsСтрокаПоискаРасширеннаяПодсказка" id="67"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СommitsСостояниеПросмотра" id="68">
+								<AdditionSource>
+									<Item>Сommits</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СommitsСостояниеПросмотраКонтекстноеМеню" id="69"/>
+								<ExtendedTooltip name="СommitsСостояниеПросмотраРасширеннаяПодсказка" id="70"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СommitsУправлениеПоиском" id="71">
+								<AdditionSource>
+									<Item>Сommits</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СommitsУправлениеПоискомКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="СommitsУправлениеПоискомРасширеннаяПодсказка" id="73"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">СommitsПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="Сommitsdate" id="74">
+									<DataPath>Сommits.date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СommitsdateКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="СommitsdateРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="Сommitslogin" id="77">
+									<DataPath>Сommits.login</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СommitsloginКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="СommitsloginРасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<InputField name="Сommitssha" id="80">
+									<DataPath>Сommits.sha</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СommitsshaКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="СommitsshaРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="Сommitsmessage" id="83">
+									<DataPath>Сommits.message</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СommitsmessageКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="СommitsmessageРасширеннаяПодсказка" id="85"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДоступныеФайлы" id="90">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файлы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вверх лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаДоступныеФайлыРасширеннаяПодсказка" id="91"/>
+					<ChildItems>
+						<InputField name="Сommit" id="7">
+							<DataPath>Сommit</DataPath>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="СommitКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СommitРасширеннаяПодсказка" id="9"/>
+							<Events>
+								<Event name="OnChange">СommitПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Table name="files" id="12">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>files</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="filesКонтекстноеМеню" id="13"/>
+							<AutoCommandBar name="filesКоманднаяПанель" id="14">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="filesРасширеннаяПодсказка" id="15"/>
+							<SearchStringAddition name="filesСтрокаПоиска" id="16">
+								<AdditionSource>
+									<Item>files</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="filesСтрокаПоискаКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="filesСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="filesСостояниеПросмотра" id="19">
+								<AdditionSource>
+									<Item>files</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="filesСостояниеПросмотраКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="filesСостояниеПросмотраРасширеннаяПодсказка" id="21"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="filesУправлениеПоиском" id="22">
+								<AdditionSource>
+									<Item>files</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="filesУправлениеПоискомКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="filesУправлениеПоискомРасширеннаяПодсказка" id="24"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">filesВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="Файлыfilename" id="40">
+									<DataPath>files.filename</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ФайлыfilenameКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ФайлыfilenameРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="Файлыadditions" id="25">
+									<DataPath>files.additions</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ФайлыadditionsКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ФайлыadditionsРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="Файлыblob_url" id="28">
+									<DataPath>files.blob_url</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Файлыblob_urlКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="Файлыblob_urlРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="Файлыchanges" id="31">
+									<DataPath>files.changes</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ФайлыchangesКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ФайлыchangesРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="Файлыcontents_url" id="34">
+									<DataPath>files.contents_url</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Файлыcontents_urlКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="Файлыcontents_urlРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="Файлыdeletions" id="37">
+									<DataPath>files.deletions</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ФайлыdeletionsКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ФайлыdeletionsРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="Файлыraw_url" id="46">
+									<DataPath>files.raw_url</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="Файлыraw_urlКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="Файлыraw_urlРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="Файлыsha" id="49">
+									<DataPath>files.sha</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ФайлыshaКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ФайлыshaРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="Файлыstatus" id="52">
+									<DataPath>files.status</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ФайлыstatusКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ФайлыstatusРасширеннаяПодсказка" id="54"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<TextDocumentField name="Изменения" id="92">
+							<DataPath>Items.files.CurrentData.patch</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ИзмененияКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="ИзмененияРасширеннаяПодсказка" id="94"/>
+						</TextDocumentField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.КонтролерКода</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Owner" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Владелец репозитория</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>Owner</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Repo" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Репозиторий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>Repo</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Сommit" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коммит (Полный адрес)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Сommit</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="files" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файлы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="additions" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Additions</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="blob_url" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Blob url</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="changes" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Changes</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="contents_url" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Contents url</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="deletions" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Deletions</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="filename" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Filename</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="patch" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Patch</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="raw_url" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Raw url</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="sha" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Sha</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="status" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Status</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Сommits" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сommits</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="login" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Login</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="sha" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Sha</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="message" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Message</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="date" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Date</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="commitID" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коммит (ИД)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресМассиваФайловGitHub" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес массива файлов git hub</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="author" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Участник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>author</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Перенести" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести файлы на проверку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Перенести</Action>
+		</Command>
+	</Commands>
+</Form>
