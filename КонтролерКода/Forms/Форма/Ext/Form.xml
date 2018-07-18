@@ -119,6 +119,20 @@
 									<ContextMenu name="ПроверкиОписаниеКонтекстноеМеню" id="56"/>
 									<ExtendedTooltip name="ПроверкиОписаниеРасширеннаяПодсказка" id="57"/>
 								</InputField>
+								<CheckBoxField name="ПроверкиРаботаИзЛюбойБазы" id="143">
+									<DataPath>Проверки.РаботаИзЛюбойБазы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроверкиРаботаИзЛюбойБазыКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="ПроверкиРаботаИзЛюбойБазыРасширеннаяПодсказка" id="145"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПроверкиТребуетсяАнализ" id="146">
+									<DataPath>Проверки.ТребуетсяАнализ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПроверкиТребуетсяАнализКонтекстноеМеню" id="147"/>
+									<ExtendedTooltip name="ПроверкиТребуетсяАнализРасширеннаяПодсказка" id="148"/>
+								</CheckBoxField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -527,6 +541,28 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТребуетсяАнализ" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется анализ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РаботаИзЛюбойБазы" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работа из любой базы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
