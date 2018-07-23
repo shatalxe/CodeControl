@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.6">
+<<<<<<< HEAD
 	<ExternalDataProcessor uuid="07b6b09d-f6e0-413b-bc88-00d4b5d0098d">
 		<InternalInfo>
 			<xr:ContainedObject>
@@ -9,6 +10,17 @@
 			<xr:GeneratedType name="ExternalDataProcessorObject.КонтролерКода" category="Object">
 				<xr:TypeId>3fc2a179-541a-4b4b-b7d9-94ce9f7d711b</xr:TypeId>
 				<xr:ValueId>6abe58f8-d8d5-419c-84ef-83013bd129a6</xr:ValueId>
+=======
+	<ExternalDataProcessor uuid="99b38000-534f-4fb9-802a-81198a003f37">
+		<InternalInfo>
+			<xr:ContainedObject>
+				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
+				<xr:ObjectId>66bbebb6-12fc-4bb5-9e06-19bfbd729c71</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:GeneratedType name="ExternalDataProcessorObject.КонтролерКода" category="Object">
+				<xr:TypeId>e7452fec-3155-4136-b354-d6fa8ddb2786</xr:TypeId>
+				<xr:ValueId>f2e53e11-e13c-41d8-81c9-01d7acb8ac82</xr:ValueId>
+>>>>>>> malyshev
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
