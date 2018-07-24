@@ -32,7 +32,7 @@
 					<v8:content>Группа вверх</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
+			<Group>Horizontal</Group>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаВверхРасширеннаяПодсказка" id="87"/>
 			<ChildItems>
@@ -165,6 +165,7 @@
 					<ChildItems>
 						<InputField name="Сommit" id="7">
 							<DataPath>Сommit</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
 							<HorizontalStretch>true</HorizontalStretch>
 							<ContextMenu name="СommitКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="СommitРасширеннаяПодсказка" id="9"/>
@@ -340,9 +341,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-			<Save>
-				<Field>Сommit</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="files" id="5">
 			<Title>
@@ -630,6 +628,17 @@
 				<Field>author</Field>
 			</Save>
 		</Attribute>
+		<Attribute name="ПодобратьИЗакрыть" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Перенести" id="1">
@@ -646,6 +655,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Перенести</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
