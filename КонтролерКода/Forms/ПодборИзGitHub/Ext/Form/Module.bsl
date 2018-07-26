@@ -200,7 +200,6 @@
 		
 		НоваяСтрока = Сommits.Добавить();
 		НоваяСтрока.login = Структура.commit.author.name;
-//		НоваяСтрока.committerlogin = Структура.committer.login;
 		НоваяСтрока.message = Структура.commit.message;
 		НоваяСтрока.sha = Структура.sha;
 		
