@@ -19,7 +19,7 @@
 					<v8:content>Контролер кода</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
+			<Comment>1</Comment>
 			<DefaultForm>ExternalDataProcessor.КонтролерКода.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
