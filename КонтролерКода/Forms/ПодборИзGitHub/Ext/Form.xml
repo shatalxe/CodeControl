@@ -125,12 +125,6 @@
 									<ContextMenu name="СommitsdateКонтекстноеМеню" id="75"/>
 									<ExtendedTooltip name="СommitsdateРасширеннаяПодсказка" id="76"/>
 								</InputField>
-								<InputField name="Сommitslogin" id="77">
-									<DataPath>Сommits.login</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СommitsloginКонтекстноеМеню" id="78"/>
-									<ExtendedTooltip name="СommitsloginРасширеннаяПодсказка" id="79"/>
-								</InputField>
 								<InputField name="Сommitssha" id="80">
 									<DataPath>Сommits.sha</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -142,6 +136,18 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="СommitsmessageКонтекстноеМеню" id="84"/>
 									<ExtendedTooltip name="СommitsmessageРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="Сommitslogin" id="77">
+									<DataPath>Сommits.login</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СommitsloginКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="СommitsloginРасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<InputField name="Сommitscommitterlogin" id="95">
+									<DataPath>Сommits.committerlogin</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СommitscommitterloginКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="СommitscommitterloginРасширеннаяПодсказка" id="97"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -576,6 +582,21 @@
 						<v8:DateQualifiers>
 							<v8:DateFractions>DateTime</v8:DateFractions>
 						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="committerlogin" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Committerlogin</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
