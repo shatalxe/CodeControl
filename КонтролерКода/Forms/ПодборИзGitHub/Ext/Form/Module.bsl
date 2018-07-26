@@ -180,7 +180,6 @@
 &НаКлиенте
 Процедура ОбновитьСписокКоммитов()
 	
-	// https://api.github.com/repos/shatalxe/CodeControl/commits?author=AKhabarov
 	Сommits.Очистить();
 	
 	Фильтр = "";
