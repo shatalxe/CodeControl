@@ -164,8 +164,6 @@
 &НаКлиенте
 Процедура ОбновитьАдресКоммита()
 	
-	//https://github.com/shatalxe/CodeControl/commit/2446bbbd40bb469558cd77966aeba9fb5d2f2c0a
-
 	Сommit = СтрШаблон("https://github.com/%1/%2/commit/%3",Owner,Repo,commitID);
 	
 КонецПроцедуры
